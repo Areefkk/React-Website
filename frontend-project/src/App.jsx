@@ -1,10 +1,12 @@
 import './App.css'
+import MovieCard from "./components/MovieCard"
 
 function App() {
+  const movieNumber = 1;
   return (
-<div>
-  <p>hello world</p>
-</div>
+<>
+  {movieNumber ===1 && <MovieCard movie={{title: "Venom", release_date: "2025"}}/>
+  </>
   )
 }
 
